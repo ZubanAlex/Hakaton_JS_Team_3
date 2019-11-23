@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.header {
+  height: 5vh;
+  min-height: 32px;
+  background-color: chartreuse;
+  width: 100%;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+.footer {
+  height: 3vh;
+  min-height: 20px;
+  background-color: red;
+  width: 100%;
+  min-width: 320px;
+  margin: 0 auto;
+}
+.map {
+  min-width: 320px;
+  min-height: 500px;
+}
+.map_wrapper {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+#map {
+  max-width: 100%;
+  width: 100%;
+  height: 92vh;
+  min-height: 450px;
+}
+.mapUsers_wrapper {
+  position: absolute;
+  z-index: 1;
+  width: 320px;
+  height: 80vh;
+  min-height: 450px;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 14px;
+  background-color: #1b1b1bde;
+  color: #b9995b;
+  top: 10px;
+  padding: 20px 8px 10px 0;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.mapUsers_title {
+  font-size: 24px;
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+.mapUsers_list {
+  list-style: none;
+  height: 88%;
+  overflow: auto;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 8px #171717;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #b9995b;
+  border-radius: 10px;
+  outline: 1px solid slategrey;
+}
+
+.mapUsers_item {
+  height: 105px;
+  margin-bottom: 30px;
+}
+
+.mapUsers_item:last-child {
+  margin-bottom: 0;
+}
+
+.mapUsers_item-wrapper {
+  display: flex;
+  padding: 8px 0 8px 50px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.mapUsers_item:hover .mapUsers_item-wrapper {
+  background-color: #b99a5b4f;
+}
+
+.mapUsers_item:hover .mapUsers_item-wrapper::before {
+  content: '';
+  width: 10px;
+  height: 100%;
+  background-color: #b9995b;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.mapUsers_item-img {
+  width: 48px;
+  height: 58px;
+  margin-right: 10px;
+}
+
+.mapUsers_name {
+  font-size: 18px;
+}
+
+.mapUsers_item-button {
+  font-size: 12px;
+  width: 94px;
+  height: 22px;
+  background-color: #b99a5b4f;
+  color: #b9995b;
+  border: none;
+  border-radius: 5px;
+  margin-left: 108px;
+  display: none;
+}
+
+.mapUsers_item:hover .mapUsers_item-button {
+  display: block;
+}

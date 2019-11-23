@@ -1,0 +1,13 @@
+{{#each this}}
+<li class="mapUsers_item">
+    <div class="mapUsers_item-wrapper">
+        <img src="{{image_list}}" alt="img" class="mapUsers_item-img" />
+        <div class="mapUsers_info_wrapper">
+            <p class="mapUsers_name">{{full_name}}</p>
+            <p class="mapUsers_age">Age: {{age}}</p>
+            <p class="mapUsers_phone">Cell: {{_id}}</p>
+        </div>
+    </div>
+    <button class="mapUsers_item-button">Show location</button>
+</li>
+{{/each}}
