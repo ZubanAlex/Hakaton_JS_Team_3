@@ -1,0 +1,102 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.swiper-body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.scroll_btn_next {
+  border-radius: 20px;
+  border-color: #b9995b;
+  font-size: 30px;
+  width: 200px;
+  height: 60px;
+  background-color: transparent;
+  cursor: pointer;
+  color: #b9995b;
+  border: solid 1.5px;
+}
+
+.scroll_btn_like {
+  background-color: #b9995b;
+  border-radius: 20px;
+  /* border-color: var(--main_color); */
+  font-size: 30px;
+  width: 200px;
+  height: 60px;
+  cursor: pointer;
+  border: solid 1.5px #b9995b;
+  color: #1b1b1b;
+}
+
+.scroll_btn_next:hover {
+  background-color: #b9995b;
+  color: #1b1b1b;
+  border-color: #b9995b;
+}
+
+.scroll-btns {
+  margin: 56px auto;
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 730px;
+  right: 31.5%;
+  z-index: 12;
+}
+
+.swiper-buttons {
+  color: #ffffff;
+  position: absolute;
+  left: 5%;
+}
+
+/* .swiper-slide1 {
+  width: 100%;
+  height: 100%;
+} */
+
+.swiper-container.swiper-container1 {
+  position: relative;
+}
+
+.swiper-container.swiper-container2 {
+  max-width: 600px;
+  width: 100%;
+  height: 600px;
+  position: absolute;
+  z-index: 5;
+  top: 105px;
+  right: 28%;
+}
+
+.user-photo1 {
+  width: 100%;
+  height: 1000px;
+  filter: blur(5px);
+}
+
+.user-photo {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-header {
+  height: 5vh;
+  min-height: 50px;
+}
+
+.swiper-footer {
+  height: 3vh;
+  min-height: 20px;
+}
