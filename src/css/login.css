@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 214px;
+}
+
+.svg {
+  padding-top: 177px;
+  margin-bottom: 82px;
+}
+
+.wrapper_title {
+  color: #be984e;
+  font-size: 48px;
+  font-weight: 13px;
+  width: 367px;
+  height: 26px;
+  font-family: Quicksand;
+  font-style: normal;
+  margin-bottom: 72px;
+}
+
+.form {
+  margin-bottom: 70px;
+  width: 475px;
+  height: 210px;
+}
+
+.form_textname {
+  color: #be984e;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 13px;
+  text-align: left;
+  font-family: Quicksand;
+  font-style: normal;
+}
+
+.form_inputname {
+  height: 52px;
+  border-radius: 10px;
+  width: 100%;
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 13px;
+  color: #be984e;
+  background-color: black !important;
+  border-color: #be984e;
+  border: 2px solid #be984e;
+}
+
+.input_error {
+  font-size: 16px;
+  opacity: o;
+  transition: 0.4s opacity;
+  font-family: Quicksand;
+}
+
+.form_textpassword {
+  color: #be984e;
+  text-align: left;
+  font-size: 18px;
+  line-height: 13px;
+  font-weight: bold;
+  font-family: Quicksand;
+  font-style: normal;
+}
+
+.form_inputpassword {
+  height: 52px;
+  border-radius: 10px;
+  width: 100%;
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 13px;
+  background-color: black !important;
+  color: #be984e;
+  border-color: #be984e;
+  border: 2px solid #be984e;
+}
+
+.box {
+  width: 475px;
+  height: 210px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 70px;
+  margin-bottom: 274px;
+}
+
+.box_login {
+  border-radius: 7px;
+  width: 475px;
+  height: 69px;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 29px;
+  font-family: Quicksand;
+  font-style: normal;
+  background-color: #be984e;
+  border: 0;
+}
+
+.box_link {
+  text-decoration: none;
+  color: #be984e;
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 13px;
+  text-align: right;
+  position: relative;
+}
+
+.box_link::after {
+  content: '';
+  width: 185px;
+  height: 0;
+  border: 1px solid #be984e;
+  position: absolute;
+  bottom: -9px;
+  right: 0;
+}
+
+.form_inputname_invalid {
+  border: 2px solid red;
+}
+
+.form_inputname_invalid + span {
+  color: red;
+  opacity: 1;
+}
