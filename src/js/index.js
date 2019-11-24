@@ -8,3 +8,4 @@ loginRequest();
 openMap();
 
 registration();
+import './slider.js';
