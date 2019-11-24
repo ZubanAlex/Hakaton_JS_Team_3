@@ -5,9 +5,9 @@
         <div class="mapUsers_info_wrapper">
             <p class="mapUsers_name">{{full_name}}</p>
             <p class="mapUsers_age">Age: {{age}}</p>
-            <p class="mapUsers_phone">Cell: {{_id}}</p>
+            <p class="mapUsers_phone">Cell: {{phone_number}}</p>
         </div>
     </div>
-    <button class="mapUsers_item-button">Show location</button>
+    <button class="mapUsers_item-button" data-location="{{geo_location}}">Show location</button>
 </li>
 {{/each}}

@@ -1,0 +1,16 @@
+.footer {
+  height: 3vh;
+  min-height: 20px;
+  background-color: #1b1b1b;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 14px;
+  color: #b9995b;
+  width: 100%;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+.footer_copirate {
+  text-align: right;
+  margin-right: 20px;
+}

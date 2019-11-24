@@ -1,0 +1,23 @@
+.header {
+  height: 5vh;
+  min-height: 50px;
+  background-color: #1b1b1b;
+  color: #b9995b;
+  width: 100%;
+  min-width: 320px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 20px 0 30px;
+  box-sizing: border-box;
+}
+.logo {
+  color: #b9995b;
+}
+
+.menuNav {
+  width: 186px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
