@@ -1,7 +1,9 @@
+import '../css/login.css';
 import { arr } from './login.js';
 import axios from 'axios';
 import PNotify from 'pnotify/dist/es/PNotify.js';
 import 'pnotify/dist/PNotifyBrightTheme.css';
+import login from '../js/login.js';
 
 export default function() {
   const form = document.querySelector('.form');
@@ -43,3 +45,5 @@ function catchError() {
     text: 'No matches found. Please enter a more specific request.',
   });
 }
+
+login();

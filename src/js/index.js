@@ -1,8 +1,5 @@
 'use strict';
 
-import '../css/login.css';
-import login from '../template/login.js';
-import loginRequest from '../template/loginRequest.js';
+import loginRequest from '../js/loginRequest.js';
 
-login();
 loginRequest();

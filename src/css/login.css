@@ -99,6 +99,8 @@ body {
   height: 210px;
   display: flex;
   flex-direction: column;
+  padding-top: 70px;
+  margin-bottom: 274px;
 }
 
 .box_login {
