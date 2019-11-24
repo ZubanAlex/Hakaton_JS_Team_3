@@ -53,6 +53,8 @@
     "core-js": "^3.3.4",
     "dropzone": "^5.5.1",
     "handlebars": "^4.5.3",
-    "swiper": "^5.2.0"
+    "swiper": "^5.2.0",
+    "simpleslider-js": "^1.9.0",
+    // "swiper": "^5.2.1"
   }
 }
