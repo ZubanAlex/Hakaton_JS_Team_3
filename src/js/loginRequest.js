@@ -51,4 +51,10 @@ export default function() {
   }
 
   login();
+
+  const regLink = document.querySelector('.box_link');
+
+  regLink.addEventListener('click', function() {
+    window.location.replace('./registration-page.html');
+  });
 }

@@ -1,16 +1,18 @@
-body {
+#drop-zone {
   background-color: #1b1b1b;
 }
 
 .addPhoto__container {
   width: 691px;
+  padding-top: 50px;
   margin: 0 auto;
   text-align: center;
 }
 
-.addPhoto__svg {
+svg.addPhoto__svg {
   margin: 0 auto;
-  padding-top: 50px;
+  width: 74px;
+  height: 100px;
 }
 
 .photo__title {
@@ -67,4 +69,8 @@ form.dropzone .dz-preview.dz-image-preview {
   width: 80px;
   height: 80px;
   fill: #fff;
+}
+
+.dropzone__icon {
+  padding-top: 40px;
 }
