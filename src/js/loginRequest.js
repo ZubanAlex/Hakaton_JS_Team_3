@@ -6,6 +6,8 @@ import 'pnotify/dist/PNotifyBrightTheme.css';
 import login from '../js/login.js';
 
 export default function() {
+  if (!document.querySelector('#login')) return;
+
   const form = document.querySelector('.form');
   let isDataLoading = false;
   form.addEventListener('submit', sendRequest);
@@ -29,7 +31,10 @@ export default function() {
         password: arr.inputPassword.value,
         login: arr.inputName.value,
       })
-      .then(res => localStorage.setItem('token', res.data.token))
+      .then(res => {
+        localStorage.setItem('token', res.data.token);
+        window.location.replace('./map-page.html');
+      })
       .catch(error => {
         catchError();
       })
@@ -37,13 +42,13 @@ export default function() {
         isDataLoading = false;
       });
   }
-}
 
-function catchError() {
-  PNotify.error({
-    title: 'Oh No!',
-    text: 'No matches found. Please enter a more specific request.',
-  });
-}
+  function catchError() {
+    PNotify.error({
+      title: 'Oh No!',
+      text: 'No matches found. Please enter a more specific request.',
+    });
+  }
 
-login();
+  login();
+}

@@ -11,17 +11,7 @@
     />
   </head>
 
-  <body>
-    <%= require('raw-loader!./../partials/dropZone.html').default %> <%=
-    require('raw-loader!./../partials/header.html').default %> <%=
-    require('raw-loader!./../partials/map.html').default %> <%=
-    require('raw-loader!./../partials/footer.html').default %>
-
-    <script
-      async
-      defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7Zkwv8ZHein66BAALTpWsJAQorKjiTlw"
-    ></script>
+  <body id="login">
     <%= require('raw-loader!./../partials/login.html').default %>
   </body>
 </html>

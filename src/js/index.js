@@ -1,9 +1,6 @@
-import "../js/addPhoto.js";
-// import openMap from './map';
-
-// openMap();
-("use strict");
-
-import loginRequest from "../js/loginRequest.js";
+// import '../js/addPhoto.js';
+import loginRequest from '../js/loginRequest.js';
+import openMap from './map';
 
 loginRequest();
+openMap();

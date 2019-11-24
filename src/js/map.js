@@ -5,10 +5,12 @@ import initMap from './initMap';
 import createMapUserList from './renderMapUserList';
 import getUserForMap from './getUsersForMap';
 
-const KEY =
-  'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJwaG9uZV9udW1iZXIiOiIyMzQ1Njc4IiwiYWdlIjoiMzMiLCJpYXQiOjE1NzQ1MzQ3MDl9.GEMn6_3wglzv6a5uqjuKqsqMS3aQYlfdOclONkxdmTKkqttTX1KPqZB1hPcIr1dblie_555RlydDYYgaeBaZeg';
+const KEY = localStorage.getItem('token');
+if (!KEY) window.location('/');
 
 export default async function openMap() {
+  if (!document.querySelector('#map-page')) return;
+
   let data = await getUserForMap(KEY);
   let geoLocation = data.map(key => key.geo_location);
 

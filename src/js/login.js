@@ -1,4 +1,7 @@
-export { arr };
+export const arr = {
+  inputName: document.querySelector('.form_inputname'),
+  inputPassword: document.querySelector('.form_inputpassword'),
+};
 
 export default function() {
   arr.inputName.addEventListener('input', validateInputLogin);
@@ -19,7 +22,3 @@ export default function() {
     }
   }
 }
-const arr = {
-  inputName: document.querySelector('.form_inputname'),
-  inputPassword: document.querySelector('.form_inputpassword'),
-};

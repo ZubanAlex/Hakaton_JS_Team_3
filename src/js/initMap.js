@@ -1,10 +1,13 @@
 import StyleSettings from './mapStyleSettings.json';
 
-export default function initMap(locationArray, centr = [55.5555, 65.55555]) {
+export default function initMap(
+  locationArray,
+  centr = [50.4282712, 30.5316664],
+) {
   let mapStyleSettings = StyleSettings;
   let options = {
     center: { lat: +centr[0], lng: +centr[1] },
-    zoom: 5,
+    zoom: 11,
     styles: mapStyleSettings,
     disableDefaultUI: true,
   };

@@ -12,12 +12,12 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  margin-bottom: 214px;
+  /* margin-bottom: 214px; */
 }
 
 .svg {
-  padding-top: 177px;
-  margin-bottom: 82px;
+  padding-top: 8vh;
+  margin-bottom: 35px;
 }
 
 .wrapper_title {
@@ -45,6 +45,7 @@ body {
   text-align: left;
   font-family: Quicksand;
   font-style: normal;
+  margin-bottom: 5px;
 }
 
 .form_inputname {
@@ -77,6 +78,7 @@ body {
   font-weight: bold;
   font-family: Quicksand;
   font-style: normal;
+  margin-bottom: 5px;
 }
 
 .form_inputpassword {
@@ -100,7 +102,7 @@ body {
   display: flex;
   flex-direction: column;
   padding-top: 70px;
-  margin-bottom: 274px;
+  /* margin-bottom: 274px; */
 }
 
 .box_login {
