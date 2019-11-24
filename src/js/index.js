@@ -1,3 +1,2 @@
-import openMap from "./map";
-
-openMap();
+'use strict';
+import '../js/addPhoto.js';
