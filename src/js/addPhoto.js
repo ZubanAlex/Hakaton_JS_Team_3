@@ -23,7 +23,7 @@ export default function() {
   // localStorage.getItem('token')
   myDropzone.on('complete', function(file) {
     if (this.files.length === 2) {
-      window.location.replace('/map-page.html');
+      window.location.replace('/slider.html');
     }
   });
 }

@@ -33,7 +33,7 @@ export default function() {
       })
       .then(res => {
         localStorage.setItem('token', res.data.token);
-        window.location.replace('./map-page.html');
+        window.location.replace('./slider.html');
       })
       .catch(error => {
         catchError();
